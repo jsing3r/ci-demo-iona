@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-privileged-pod-4
+spec:
+  containers:
+    - name: sample-privileged-container
+      image: nginx:latest
+      securityContext:
+       privileged: true
